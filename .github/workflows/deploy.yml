@@ -24,6 +24,8 @@ jobs:
     - name: Install deps
       run: |
         npm install -g mermaid.cli
+        gem install bundler
+        bundle install
     - name: Setup deploy options
       id: setup
       run: |
